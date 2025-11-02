@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:bytefest2025@example.com
+SUMMARY:BYTEFEST - More than just a hackathon
+DTSTART:20251118T090000
+DTEND:20251118T170000
+DESCRIPTION:Join us at BYTEFEST - More than just a hackathon!\nRegister here: https://register.bytefestnms.com
+LOCATION:https://maps.app.goo.gl/cq64XtWAakaa94nTA
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
