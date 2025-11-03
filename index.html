@@ -8,6 +8,7 @@
     <!-- Load VT323 (Pixel/Terminal font) for a stronger retro aesthetic --><link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     
     <!-- Custom Tailwind configuration for the Tron Ares glow effect --><script>
+
         tailwind.config = {
             theme: {
                 extend: {
@@ -306,6 +307,7 @@
                     <span class="font-bold text-ares-red block">// ORGANIZER</span>
 
                     <a href="https://maps.app.goo.gl/cq64XtWAakaa94nTA" target="_blank" class="text-white block mt-1 hover:underline">
+                        <img src="icons8-external-link-30.png" alt="External Link" class="absolute top-2 right-2 w-5 h-5">
                         GEMS NEW MILLENNIUM SCHOOL DUBAI
                     </a>
 
@@ -322,6 +324,7 @@
                        target="_blank" 
                        class="text-white block mt-1 hover:underline"
                     >
+                    <img src="icons8-external-link-30.png" alt="External Link" class="absolute top-2 right-2 w-5 h-5">
                         NOVEMBER 18, 2025
                     </a>
                 
@@ -332,6 +335,7 @@
                 <div class="bg-black border border-ares p-4 rounded-sm shadow-glow-sm p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02]">
                     <span class="font-bold text-ares-red block">// CONTACT</span>
                     <a href="mailto:bytefestgnms@gmail.com" class="text-white block mt-1 hover:underline">
+                        <img src="icons8-external-link-30.png" alt="External Link" class="absolute top-2 right-2 w-5 h-5">
                         bytefestgnms@gmail.com
                     </a>
                 </div>
@@ -339,93 +343,236 @@
             </div>
         </section>
 
-        <!-- Section 2: Program Matrix / Epic Events --><section class="mb-16">
-            <h2 class="text-xl md:text-3xl uppercase mb-8 text-ares-red event-header pb-3">
-                &lt;THE_SIX_EPIC_EVENTS / PROGRAM_MATRIX&gt;
-            </h2>
+<!-- Section 2: Program Matrix / Epic Events -->
+<section class="mb-16">
+    <h2 class="text-xl md:text-3xl uppercase mb-8 text-ares-red event-header pb-3">
+        &lt;THE_SIX_EPIC_EVENTS / PROGRAM_MATRIX&gt;
+    </h2>
 
-            <!-- Events Grid --><div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Events Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-                <!-- Event 1: Hackrush (Smoother transition duration applied) --><div class="p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02]">
-                    <h3 class="text-3xl font-bold ares-glow mb-2 flex items-center">
-                        <span class="mr-3 text-4xl">🚀</span> HACKRUSH
-                    </h3>
-                    <p class="text-gray-300 text-base mb-3" style="font-size: 20px;">
-                        A high-stakes, multi-round coding marathon designed to test the resilience, efficiency, and problem-solving prowess of the most skilled programmers.
-                    </p>
-                    <div class="border-t border-dashed border-ares pt-2">
-                        <p class="font-bold text-ares-red text-xl">GRADE & CAPACITY:</p>
-                        <p class="font text-white text-lg">Open to Grades 9-12/Year 10-13. Maximum 5 Students per school.</p>
-                    </div>
+    <!-- Event Cards -->
+    <div class="event-card p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02] cursor-pointer">
+        <div class="flex items-center mb-2">
+            <span class="mr-3 text-4xl">🚀</span>
+            <h3 class="text-3xl font-bold text-ares-red ares-glow">HACKRUSH</h3>
+        </div>
+        <p class="text-gray-300 text-base mb-3" style="font-size: 20px;">
+            A high-stakes, multi-round coding marathon.
+        </p>
+    </div>
+
+    <div class="event-card p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02] cursor-pointer">
+        <div class="flex items-center mb-2">
+            <span class="mr-3 text-4xl">🤖</span>
+            <h3 class="text-3xl font-bold text-ares-red ares-glow">CIRCUIT RIOT</h3>
+        </div>
+        <p class="text-gray-300 text-base mb-3" style="font-size: 20px;">
+            A thrilling robotics tournament.
+        </p>
+    </div>
+
+    <div class="event-card p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02] cursor-pointer">
+        <div class="flex items-center mb-2">
+            <span class="mr-3 text-4xl">🧱</span>
+            <h3 class="text-3xl font-bold text-ares-red ares-glow">CODALO</h3>
+        </div>
+        <p class="text-gray-300 text-base mb-3" style="font-size: 20px;">
+            Premier robotics battle competition.
+        </p>
+    </div>
+
+    <div class="event-card p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02] cursor-pointer">
+        <div class="flex items-center mb-2">
+            <span class="mr-3 text-4xl">💡</span>
+            <h3 class="text-3xl font-bold text-ares-red ares-glow">VYBECODE</h3>
+        </div>
+        <p class="text-gray-300 text-base mb-3" style="font-size: 20px;">
+            Rapid real-world problem-solving sprint.
+        </p>
+    </div>
+
+    <div class="event-card p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02] cursor-pointer">
+        <div class="flex items-center mb-2">
+            <span class="mr-3 text-4xl">🎮</span>
+            <h3 class="text-3xl font-bold text-ares-red ares-glow">GAMEGRID</h3>
+        </div>
+        <p class="text-gray-300 text-base mb-3" style="font-size: 20px;">
+            Competitive 1v1 e-sports tournament.
+        </p>
+    </div>
+
+    <div class="event-card p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02] cursor-pointer">
+        <div class="flex items-center mb-2">
+            <span class="mr-3 text-4xl">🚀</span>
+            <h3 class="text-3xl font-bold text-ares-red ares-glow">LAUNCH PAD</h3>
+        </div>
+        <p class="text-gray-300 text-base mb-3" style="font-size: 20px;">
+            Exciting coding challenge for younger participants.
+        </p>
+    </div>
+
+</div>
+
+<!-- Modal Overlay -->
+<div id="event-modal" class="fixed inset-0 bg-black/70 flex justify-center items-start pt-10 opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+    <div class="modal-content bg-black/90 border-4 border-ares rounded-lg shadow-glow-md w-11/12 max-w-4xl max-h-[85vh] overflow-y-auto p-6 transform scale-90 transition-all duration-500 relative">
+        <button id="modal-close" class="text-ares-red text-2xl font-bold absolute top-4 right-4">✕</button>
+        <div id="modal-body" class="space-y-4"></div>
+    </div>
+</div>
+
+<script>
+const cards = document.querySelectorAll('.event-card');
+const modal = document.getElementById('event-modal');
+const modalBody = document.getElementById('modal-body');
+const modalClose = document.getElementById('modal-close');
+
+const eventData = {
+    'HACKRUSH': {
+        icon: '🚀',
+        title: 'HACKRUSH',
+        description: `HackRush sets the stage for a thrilling test of skill where logic, strategy, and pure programming talent collide. This competition is designed for those who thrive on solving problems, think creatively under pressure, and enjoy the rush of seeing code come to life flawlessly. It isn’t just about writing Python — it’s about understanding challenges, breaking them down, and turning ideas into efficient, elegant solutions.
+
+        Participants will be handed a structured question sheet composed of 15 algorithmic challenges, carefully divided across three tiers of difficulty — Easy, Medium, and Hard. Each challenge explores a crucial concept in problem-solving with Python, from fundamentals every programmer should master to advanced logic that demands deep analytical thinking.
+
+        Easy problems serve as quick wins: small puzzles that validate your speed, confidence, and grasp of the basics. These questions cover simple operations involving strings, loops, arithmetic, and decision-making. They may look straightforward, but even the simplest problem rewards clean logic and attention to detail — especially when every mark matters.
+
+        Medium-difficulty problems step up the excitement. Here, participants encounter tasks requiring structured reasoning, careful planning, and stronger algorithmic concepts. These are the types of problems where data structures such as lists, sets, and dictionaries begin to shine, and corner cases must be handled with precision. A good approach and organized coding style make all the difference.
+
+        Then come the Hard problems — the crown jewels of HackRush. These challenges push the boundaries of logic and problem-solving ability. Whether it’s optimizing performance, implementing clever algorithms, or orchestrating multiple techniques into one seamless function, these puzzles separate the exceptional from the ordinary. Solving even one of them is an accomplishment; solving several is a feat worth celebrating.
+
+        To maintain consistency and elevate coding standards, each question includes a specific function name that participants must use exactly as given. This reinforces best practices in modular coding and sharpens the ability to interpret requirements correctly — a skill essential to real-world programming. It also streamlines evaluation, ensuring that solutions are judged fairly on their correctness and how closely they adhere to the prompt’s intent.
+
+        With a maximum of 45 marks, every decision — which question to tackle first, when to switch strategies, where to push for extra refinement — becomes a strategic choice that could determine the final leaderboard.
+
+        More than just a competition, HackRush celebrates the process of thinking differently. It’s about testing your limits, trusting your reasoning, and discovering what you’re capable of when the timer is ticking and the code must be perfect. It is a playground for innovators, thinkers, and future engineers — a chance to prove your capability where it matters most: in the code you create.
+
+        Welcome to HackRush.`,
+        grade: 'Open to Grades 9-12/Year 10-13. Maximum 5 Students per school.'
+    },
+    'CIRCUIT RIOT': {
+        icon: '🤖',
+        title: 'CIRCUIT RIOT',
+        description: `Welcome to CIRCUIT RIOT, the premier robotics challenge hosted by GEMS New Millennium School, Al Khail. This event is designed to celebrate the spirit of innovation, technical precision, and creative problem-solving, providing students with a unique platform to showcase their talents in robotics and programming. CIRCUIT RIOT is not just a competition—it is an immersive experience where participants bring their ideas to life, combining engineering expertise with digital creativity.
+
+        At the heart of this challenge is the Arduino-based line-following robot, a sophisticated device that must navigate intricate circuit tracks with complete control and accuracy. The course is designed to test the participants’ abilities in multiple dimensions: coding, mechanical design, sensor integration, and strategic problem-solving. Each twist, turn, and junction in the track demands careful calibration, logical thinking, and precision programming, making the competition both intellectually stimulating and practically rewarding.
+
+        Participants are encouraged to think beyond basic functionality. CIRCUIT RIOT emphasizes design aesthetics, encouraging teams to develop bots that are visually striking as well as technically capable. Inspired by the futuristic Tron theme, each robot should reflect a balance of style and efficiency, demonstrating how engineering ingenuity and artistic vision can merge seamlessly. From sleek chassis designs to glowing LED arrangements, every detail counts in creating a robot that is not only fast and accurate but also captivating to watch.
+
+        The challenge also fosters collaboration and critical thinking. Teams must plan their design, write and debug code, and test their robots repeatedly to ensure flawless performance. This iterative process develops resilience and adaptability, teaching participants to approach complex problems methodically and creatively. By simulating real-world engineering scenarios, CIRCUIT RIOT prepares students for future careers in technology and innovation while also promoting teamwork, leadership, and strategic thinking.
+
+        CIRCUIT RIOT is more than just a competition; it is a celebration of STEM excellence. Participants will have the opportunity to engage with peers who share a passion for robotics, learn from mentors and judges with industry knowledge, and gain hands-on experience in a challenging and rewarding environment. Whether it is refining sensor alignment, optimizing code efficiency, or experimenting with dynamic designs, every moment of preparation and performance highlights the limitless possibilities of innovation.
+
+        In essence, CIRCUIT RIOT is a stage for young engineers to demonstrate their technical skills, imagination, and problem-solving abilities. It challenges participants to push boundaries, explore new concepts, and deliver robots that navigate complex tracks with precision and flair. By merging coding discipline, engineering accuracy, and creative design, CIRCUIT RIOT ensures that every participant leaves with not only a sense of achievement but also a deeper understanding of robotics and the joy of technological creation.
+
+        Join us as we celebrate creativity, engineering mastery, and competitive spirit at CIRCUIT RIOT—where every circuit completed, every line followed, and every innovative idea brings the world of robotics to life in spectacular fashion.
+        `,
+        grade: 'Grade 9-12 / Year 10 - 13. Maximum 5 Students per school, 20 teams total.'
+    },
+    'CODALO': {
+        icon: '🧱',
+        title: 'CODALO',
+        description: `Welcome to CODALO, the flagship robotics challenge of ByteFest at GEMS New Millennium School, Al Khail. CODALO provides the ultimate platform for young engineers, programmers, and innovators to showcase their creativity, strategic thinking, and technical skills in a competitive yet inspiring environment. Unlike standard robotics contests, CODALO challenges participants across multiple dimensions—mechanical design, programming, tactical execution, and digital presentation—offering an experience that is both intellectually stimulating and highly original.
+
+        CODALO is built on the principle that creativity, technical mastery, and strategic thinking must work together. Teams are encouraged to push the boundaries of conventional robotics design, integrating unique sensors, coding techniques, and mechanical innovations that reflect their individual approach and ingenuity. This ensures that every robot competing in CODALO is truly original, making the event highly distinctive and difficult for other schools to replicate.
+
+        Beyond competition, CODALO promotes collaboration, critical thinking, and resilience. Participants learn to troubleshoot, iterate, and refine their robots in preparation for high-stakes challenges, gaining practical insights into the engineering and programming process. The event offers an immersive experience that blends STEM excellence with creativity and strategy, preparing participants for future technological challenges and innovation opportunities.
+
+        In essence, CODALO is more than a robotics competition—it is a celebration of ingenuity, engineering, and competitive spirit. By combining digital design presentation, head-to-head robot battles, and a strong emphasis on originality, CODALO offers a platform where students can bring their visions to life in ways unique to ByteFest. Join us for a showcase of strategy, creativity, and engineering brilliance, and witness how CODALO transforms ideas into action in the most thrilling and innovative way possible.
+        `,
+        grade: 'Grade 9-12 / Year 10 - 13. Maximum of 6 Students per school.'
+    },
+    'VYBECODE': {
+        icon: '💡',
+        title: 'VYBECODE',
+        description: `Welcome to Vybecode, the flagship coding arena of ByteFest at GEMS New Millennium School, Al Khail. Vybecode is designed to be the ultimate testing ground for young programmers, innovators, and problem solvers, combining speed, logic, and creativity in a high-stakes competitive environment. This coding challenge provides students with an opportunity to demonstrate their technical mastery, algorithmic thinking, and collaborative skills while engaging in a unique experience that goes far beyond traditional coding contests.
+
+        Open to innovators from Grades 7 to 10, Vybecode invites interschool teams of up to five participants to enter the arena. Each team is encouraged to bring together diverse skills, combining coding expertise, analytical thinking, and creative problem-solving to craft solutions that are both efficient and innovative. Teams must work under a fixed temporal loop, a carefully designed time constraint that tests not only coding speed but also the clarity of thought, organization, and ability to perform under pressure.
+
+        Vybecode is structured to foster both collaboration and individual excellence. Team members must communicate effectively, delegate tasks strategically, and coordinate their coding efforts to ensure seamless integration of multiple components. The arena challenges participants to think beyond standard approaches, encouraging innovative problem-solving that reflects the unique identity and thought process of each team.
+
+        The competition is more than a test of technical ability; it is an immersive journey into the world of coding strategy and logical reasoning. As teams progress through successive challenges, they will encounter increasingly complex problems requiring careful planning, precise execution, and creative solutions. This progression ensures that Vybecode rewards not only knowledge and skill but also adaptability, resilience, and ingenuity.
+
+        In essence, Vybecode is a celebration of computational thinking, teamwork, and creative problem-solving. It is a platform where young innovators can push the boundaries of what is possible in coding, while engaging in an experience designed to inspire, challenge, and prepare them for future technological endeavors. Each team’s approach, strategy, and execution are a reflection of their unique capabilities, making every solution in Vybecode an original contribution to the competition.
+
+        Join us at Vybecode, where strategy meets creativity, logic meets innovation, and every line of code is an opportunity to demonstrate brilliance in the most challenging and dynamic coding arena of ByteFest.`,
+        grade: 'Grade 7-10/Year 8-11. Maximum of 5 Students per school.'
+    },
+    'GAMEGRID': {
+        icon: '🎮',
+        title: 'GAMEGRID',
+        description: `Welcome to GAME GRID, the ultimate Esports showdown of ByteFest! GAME GRID is designed to bring together the fastest reflexes, sharpest strategies, and most passionate gamers from across schools in an electrifying competitive environment. This event offers participants a platform to demonstrate not only their technical skills and hand-eye coordination but also their ability to think strategically and perform under pressure, making it a one-of-a-kind gaming experience.
+
+        Players will compete across two thrilling gaming arenas — EA SPORTS FC (FIFA) and ROCKET LEAGUE — both running simultaneously on PlayStation 5 consoles. Each arena presents its own set of challenges and demands. In EA SPORTS FC, players will need precision, timing, and tactical understanding to control the pitch, outmaneuver opponents, and score decisive goals. ROCKET LEAGUE, on the other hand, combines high-speed vehicle control, teamwork, and split-second decision-making in a dynamic, physics-driven environment. Together, these arenas test a wide spectrum of gaming skills, ensuring that only the most versatile and prepared players rise to the top.
+
+        GAME GRID is structured to celebrate not just individual talent but also teamwork, strategy, and adaptability. Competitors must analyze opponents’ patterns, make real-time decisions, and execute techniques flawlessly to advance through the brackets. Every match is an opportunity to demonstrate precision, coordination, and creativity, turning each game into a high-stakes showcase of skill and strategy.
+
+        This Esports showdown is open to school teams eager to demonstrate their competitive edge and claim their place in ByteFest history. Participants will gain experience competing in a professional-style gaming environment, complete with structured rounds, real-time scoring, and audience engagement that adds to the thrill of the event. Beyond the competition itself, GAME GRID encourages sportsmanship, critical thinking, and resilience, reinforcing the values that make both gaming and professional competition meaningful.
+
+        In addition to the competitive aspect, GAME GRID provides a platform for gamers to connect, share strategies, and learn from one another, fostering a community of innovation and passion. By blending high-energy gameplay with careful planning and strategy, participants are challenged to refine their skills continuously and push the boundaries of what they can achieve in Esports.
+
+        In essence, GAME GRID is more than just a tournament; it is a celebration of reflexes, strategy, precision, and passion. Represent your school, showcase your skills, and compete for the ultimate title at ByteFest 2025. Each match is a test of agility, teamwork, and tactical intelligence, and each victory is a testament to dedication and skill. GAME GRID promises an immersive, high-energy, and unforgettable experience for all participants, making it the centerpiece of ByteFest’s Esports arena.
+        `,
+        grade: 'Grade 9-12 / Year 10 - 13. Maximum of 1 Student per Game.'
+    },
+    'LAUNCH PAD': {
+        icon: '🚀',
+        title: 'LAUNCH PAD',
+        description: `Welcome to the Launchpad, Cadets! This is ByteFest’s ultimate test of quick thinking, problem-solving, and programming agility, conducted in partnership with the Al Amal Space Club at NMS. In this fast-paced challenge, participants step into the role of mission engineers tasked with repairing their rocket before launch. The clock is ticking, and only the teams that combine speed, precision, and creativity will succeed in reaching liftoff.
+
+        At the heart of the Launchpad challenge are a series of programming problems designed to test both logical thinking and coding efficiency. Each problem is a crucial component of the rocket’s repair sequence. Teams must analyze the issues, develop optimized solutions, and implement their code quickly and accurately to progress. The faster a team solves the problems, the closer they get to launching their rocket, creating an environment that rewards both strategic planning and technical skill.
+            
+        Participants are encouraged to think critically, collaborate effectively, and apply coding concepts in real time. The challenge simulates a dynamic engineering scenario, requiring cadets to troubleshoot unexpected issues and adapt their solutions on the fly. Success is determined not only by speed but also by the quality and correctness of the code, reinforcing the importance of careful logic and methodical problem-solving.
+            
+        The Launchpad is open to students eager to test their programming abilities under pressure. Teams will experience the thrill of competition in a gamified setting where every correct solution brings them one step closer to success. Cadets will need to balance efficiency and accuracy, ensuring their code passes each test case while keeping pace with the ticking clock.
+            
+        Beyond the technical challenges, Launchpad fosters collaboration, teamwork, and resilience. Cadets must communicate clearly, divide tasks intelligently, and support each other through each programming hurdle. This not only sharpens coding skills but also encourages critical thinking, creativity, and adaptability—skills that are invaluable for future technological endeavors.
+            
+        In essence, the Launchpad is more than just a coding challenge; it is an immersive mission that combines logic, strategy, and teamwork in a high-stakes environment. Teams are tested on their ability to solve problems rapidly, manage pressure, and execute solutions with precision. The first team to complete all programming tasks and launch their rocket demonstrates mastery of both coding and collaboration.
+            
+        Join the Launchpad at ByteFest, in partnership with the Al Amal Space Club at NMS, where coding skills meet strategy, creativity, and the thrill of competition. Repair your rocket, solve the problems, and race against the clock to achieve liftoff. Only the fastest, smartest, and most coordinated cadets will claim victory and experience the exhilaration of being the first to launch.
+        `,
+        grade: 'Grade 6-8/Year 7-9. First come, first serve. One Student per School.'
+    }
+};
+
+// Open modal
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        const title = card.querySelector('h3').textContent.trim();
+        const data = eventData[title];
+        if(data){
+            modalBody.innerHTML = `
+                <div class="flex items-center mb-4">
+                    <span class="text-5xl mr-3">${data.icon}</span>
+                    <h2 class="text-4xl font-bold text-ares-red">${data.title}</h2>
                 </div>
+                <p class="text-gray-300 text-lg mb-4 whitespace-pre-line">${data.description}</p>
+                <p class="font-bold text-ares-red text-2xl mb-1">GRADE & CAPACITY:</p>
+                <p class="text-white text-xl mb-2">${data.grade}</p>
+            `;
+        }
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        setTimeout(() => modal.querySelector('.modal-content').classList.remove('scale-90'), 10);
+    });
+});
 
-                <!-- Event 2: CircuitRiot (Smoother transition duration applied) --><div class="p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02]">
-                    <h3 class="text-3xl font-bold ares-glow mb-2 flex items-center">
-                        <span class="mr-3 text-4xl">🤖</span> CIRCUIT RIOT
-                    </h3>
-                    <p class="text-gray-300 text-base mb-3" style="font-size: 20px;">
-                        A thrilling robotics tournament where student-built machines will race, navigate complex mazes, and push the limits of engineering and design.
-                    </p>
-                    <div class="border-t border-dashed border-ares pt-2">
-                        <p class="font-bold text-ares-red text-xl">GRADE & CAPACITY:</p>
-                        <p class="font text-white text-lg">Grade 9-12 / Year 10 - 13. Maximum 5 Students per school, 20 teams total.</p>
-                    </div>
-                </div>
+// Close modal
+modalClose.addEventListener('click', () => {
+    modal.querySelector('.modal-content').classList.add('scale-90');
+    setTimeout(() => modal.classList.add('opacity-0', 'pointer-events-none'), 300);
+});
 
-                <!-- Event 3: Codalo (Smoother transition duration applied) --><div class="p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02]">
-                    <h3 class="text-3xl font-bold ares-glow mb-2 flex items-center">
-                        <span class="mr-3 text-4xl">🧱</span> CODALO
-                    </h3>
-                    <p class="text-gray-300 text-base mb-3" style="font-size: 20px;">
-                        A premier robotics battle competition providing a platform for students to engage with AI, fostering collaboration and innovation across two exciting rounds: TITAN and ROBOT.IO.
-                    </p>
-                    <div class="border-t border-dashed border-ares pt-2">
-                        <p class="font-bold text-ares-red text-xl">GRADE & CAPACITY:</p>
-                        <p class="font text-white text-lg">Grade 9-12 / Year 10 - 13. Maximum of 6 Students per school.</p>
-                    </div>
-                </div>
-                
-                <!-- Event 4: VybeCode (Smoother transition duration applied) --><div class="p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02]">
-                    <h3 class="text-3xl font-bold ares-glow mb-2 flex items-center">
-                        <span class="mr-3 text-4xl">💡</span> VYBECODE
-                    </h3>
-                    <p class="text-gray-300 text-base mb-3" style="font-size: 20px;">
-                        A rapid, real-world problem-solving sprint. Teams will have to develop practical tech solutions to pressing global issues using agentic AI coding tools.
-                    </p>
-                    <div class="border-t border-dashed border-ares pt-2">
-                        <p class="font-bold text-ares-red text-xl">GRADE & CAPACITY:</p>
-                        <p class="font text-white text-lg">Grade 7-10/Year 8-11. Maximum of 5 Students per school.</p>
-                    </div>
-                </div>
+// Click outside modal
+modal.addEventListener('click', e => {
+    if(e.target === modal) modalClose.click();
+});
+</script>
 
-                <!-- Event 5: GameGrid (Smoother transition duration applied) --><div class="p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02]">
-                    <h3 class="text-3xl font-bold ares-glow mb-2 flex items-center">
-                        <span class="mr-3 text-4xl">🎮</span> GAMEGRID
-                    </h3>
-                    <p class="text-gray-300 text-base mb-3" style="font-size: 20px;">
-                        A competitive 1v1 e-sports tournament where students will face off in FC'25 and Rocket League.
-                    </p>
-                    <div class="border-t border-dashed border-ares pt-2">
-                        <p class="font-bold text-ares-red text-xl">GRADE & CAPACITY:</p>
-                        <p class="font text-white text-lg">Grade 9-12 / Year 10 - 13. Maximum of 1 Student per Game.</p>
-                    </div>
-                </div>
 
-                <!-- Event 6: Launch Pad (Smoother transition duration applied) --><div class="p-6 border-4 border-l-0 border-r-0 border-ares shadow-glow-sm bg-black/50 rounded-sm transform transition-all duration-500 ease-in-out hover:shadow-glow-md hover:scale-[1.02]">
-                    <h3 class="text-3xl font-bold ares-glow mb-2 flex items-center">
-                        <span class="mr-3 text-4xl">🚀</span> LAUNCH PAD
-                    </h3>
-                    <p class="text-gray-300 text-base mb-3" style="font-size: 20px;">
-                        An exciting coding challenge for younger participants. A race to see who can solve the problems to launch their rocket first.
-                    </p>
-                    <div class="border-t border-dashed border-ares pt-2">
-                        <p class="font-bold text-ares-red text-xl">GRADE & CAPACITY:</p>
-                        <p class="font text-white text-lg">Grade 6-8/Year 7-9. First come, first serve. One Student per School.</p>
-                    </div>
-                </div>
 
-            </div>
-        </section>
 
         <!-- Footer / System Exit Message --><footer class="mt-16 pt-8 border-t-2 border-ares text-center">
             <h3 class="text-3xl md:text-4xl uppercase mb-4 text-ares-red ares-glow tracking-widest">
@@ -437,6 +584,15 @@
             <div class="w-1/4 h-1 bg-ares-red mx-auto mt-6 shadow-glow-sm"></div>
         </footer>
 
+    </div>
+
+    <!-- last credits --> <div class="text-center">
+        <br>
+        <a href="https://www.instagram.com/bytefestnms/?utm_source=ig_web_button_share_sheet" target="_blank">    
+            <img src="instagram.png" class="mx-auto" style="width: 30px;">
+        </a>
+        <span style="display:block; height:5px;"></span>
+        <h3 class="font text-ares-red text-xl">© 2025 by ByteFest</h3>
     </div>
 
     <!-- JAVASCRIPT FOR CURSOR TRAIL (Must be before </body>) -->
