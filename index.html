@@ -284,7 +284,7 @@
                 <p class="text-lg md:text-2xl text-ares-red font-light uppercase mb-4">// SPONSORED BY //</p>
 
                 <a href="https://am-i-tech-enough.com/" target="_blank" class="inline-block">
-                    <img src="https://github.com/auxiliumgnms/bytfestwebsite/blob/main/amitechenough.png?raw=true" 
+                    <img src="amitechenough.png" 
                          alt="am i tech enough" 
                          class="w-32 md:w-48 mx-auto filter brightness-125"
                         style="transform: scale(1.5); filter: drop-shadow(0 0 10px #D00020);">
@@ -292,6 +292,16 @@
             </div>
 
             </header>
+
+        <!-- Registration Button --><div class="text-center mb-16">
+            <a href="core_team.html" 
+               class="inline-block px-10 py-4 text-xl md:text-3xl font-bold uppercase bg-ares-red text-grid-black rounded-sm 
+                      border-4 border-ares-red shadow-glow-md hover:shadow-glow-lg transition-all duration-500 ease-in-out 
+                      transform hover:scale-[1.03] active:scale-95 tracking-wider"
+               >
+                &gt;&gt; CORE TEAM &lt;&lt;
+            </a>
+        </div>
 
         <!-- Section 1: Core Identity / Grid Data --><section class="mb-16">
             <h2 class="text-xl md:text-3xl uppercase mb-8 text-ares-red event-header pb-3">
@@ -437,6 +447,9 @@ const eventData = {
     'HACKRUSH': {
         icon: '🚀',
         title: 'HACKRUSH',
+        coreTeam: ["Rushmil Goel", "Shayan Amin Usmani"],
+        coreTeamphoto: ["bytefest-human-photos\\Rushmil.PNG","bytefest-human-photos\\Shayan Amin Usmani.PNG"],
+        teamLen: 2,
         description: `HackRush sets the stage for a thrilling test of skill where logic, strategy, and pure programming talent collide. This competition is designed for those who thrive on solving problems, think creatively under pressure, and enjoy the rush of seeing code come to life flawlessly. It isn’t just about writing Python — it’s about understanding challenges, breaking them down, and turning ideas into efficient, elegant solutions.
 
         Participants will be handed a structured question sheet composed of 15 algorithmic challenges, carefully divided across three tiers of difficulty — Easy, Medium, and Hard. Each challenge explores a crucial concept in problem-solving with Python, from fundamentals every programmer should master to advanced logic that demands deep analytical thinking.
@@ -459,6 +472,9 @@ const eventData = {
     'CIRCUIT RIOT': {
         icon: '🤖',
         title: 'CIRCUIT RIOT',
+        coreTeam: ["Karsten George", "Mohammed Mifzal Maharoof", "Shaurya Navadiya"],
+        coreTeamphoto: ["bytefest-human-photos\\Karsten George Pulicka Parambile.PNG","bytefest-human-photos\\Mohammed Mifzal Maharoof.PNG", "bytefest-human-photos\\Shaurya Navadiya.PNG"],
+        teamLen: 3,
         description: `Welcome to CIRCUIT RIOT, the premier robotics challenge hosted by GEMS New Millennium School, Al Khail. This event is designed to celebrate the spirit of innovation, technical precision, and creative problem-solving, providing students with a unique platform to showcase their talents in robotics and programming. CIRCUIT RIOT is not just a competition—it is an immersive experience where participants bring their ideas to life, combining engineering expertise with digital creativity.
 
         At the heart of this challenge is the Arduino-based line-following robot, a sophisticated device that must navigate intricate circuit tracks with complete control and accuracy. The course is designed to test the participants’ abilities in multiple dimensions: coding, mechanical design, sensor integration, and strategic problem-solving. Each twist, turn, and junction in the track demands careful calibration, logical thinking, and precision programming, making the competition both intellectually stimulating and practically rewarding.
@@ -478,6 +494,9 @@ const eventData = {
     'CODALO': {
         icon: '🧱',
         title: 'CODALO',
+        coreTeam: ["Vishnu Narayanan", "Siya Jaiswal"],
+        coreTeamphoto: ["bytefest-human-photos\\Vishnu.PNG","bytefest-human-photos\\Siya Jaiswal.PNG"],
+        teamLen: 2,
         description: `Welcome to CODALO, the flagship robotics challenge of ByteFest at GEMS New Millennium School, Al Khail. CODALO provides the ultimate platform for young engineers, programmers, and innovators to showcase their creativity, strategic thinking, and technical skills in a competitive yet inspiring environment. Unlike standard robotics contests, CODALO challenges participants across multiple dimensions—mechanical design, programming, tactical execution, and digital presentation—offering an experience that is both intellectually stimulating and highly original.
 
         CODALO is built on the principle that creativity, technical mastery, and strategic thinking must work together. Teams are encouraged to push the boundaries of conventional robotics design, integrating unique sensors, coding techniques, and mechanical innovations that reflect their individual approach and ingenuity. This ensures that every robot competing in CODALO is truly original, making the event highly distinctive and difficult for other schools to replicate.
@@ -491,6 +510,9 @@ const eventData = {
     'VYBECODE': {
         icon: '💡',
         title: 'VYBECODE',
+        coreTeam: ["Kavin Grover", "Darsh Sharma"],
+        coreTeamphoto: ["bytefest-human-photos\\Kavin  Grover.PNG","bytefest-human-photos\\Darsh  Sharma.PNG"],
+        teamLen: 2,
         description: `Welcome to Vybecode, the flagship coding arena of ByteFest at GEMS New Millennium School, Al Khail. Vybecode is designed to be the ultimate testing ground for young programmers, innovators, and problem solvers, combining speed, logic, and creativity in a high-stakes competitive environment. This coding challenge provides students with an opportunity to demonstrate their technical mastery, algorithmic thinking, and collaborative skills while engaging in a unique experience that goes far beyond traditional coding contests.
 
         Open to innovators from Grades 7 to 10, Vybecode invites interschool teams of up to five participants to enter the arena. Each team is encouraged to bring together diverse skills, combining coding expertise, analytical thinking, and creative problem-solving to craft solutions that are both efficient and innovative. Teams must work under a fixed temporal loop, a carefully designed time constraint that tests not only coding speed but also the clarity of thought, organization, and ability to perform under pressure.
@@ -507,6 +529,9 @@ const eventData = {
     'GAMEGRID': {
         icon: '🎮',
         title: 'GAMEGRID',
+        coreTeam: ["Sameer Mishra", "Arjun Choudhary"],
+        coreTeamphoto: ["bytefest-human-photos\\Sameer  Mishra.PNG","bytefest-human-photos\\Arjun Choudhary.PNG"],
+        teamLen: 2,
         description: `Welcome to GAME GRID, the ultimate Esports showdown of ByteFest! GAME GRID is designed to bring together the fastest reflexes, sharpest strategies, and most passionate gamers from across schools in an electrifying competitive environment. This event offers participants a platform to demonstrate not only their technical skills and hand-eye coordination but also their ability to think strategically and perform under pressure, making it a one-of-a-kind gaming experience.
 
         Players will compete across two thrilling gaming arenas — EA SPORTS FC (FIFA) and ROCKET LEAGUE — both running simultaneously on PlayStation 5 consoles. Each arena presents its own set of challenges and demands. In EA SPORTS FC, players will need precision, timing, and tactical understanding to control the pitch, outmaneuver opponents, and score decisive goals. ROCKET LEAGUE, on the other hand, combines high-speed vehicle control, teamwork, and split-second decision-making in a dynamic, physics-driven environment. Together, these arenas test a wide spectrum of gaming skills, ensuring that only the most versatile and prepared players rise to the top.
@@ -524,6 +549,9 @@ const eventData = {
     'LAUNCH PAD': {
         icon: '🚀',
         title: 'LAUNCH PAD',
+        coreTeam: ["Aahaan Ved"],
+        coreTeamphoto: ["bytefest-human-photos\\Aahaan  Ved.PNG"],
+        teamLen: 1,
         description: `Welcome to the Launchpad, Cadets! This is ByteFest’s ultimate test of quick thinking, problem-solving, and programming agility, conducted in partnership with the Al Amal Space Club at NMS. In this fast-paced challenge, participants step into the role of mission engineers tasked with repairing their rocket before launch. The clock is ticking, and only the teams that combine speed, precision, and creativity will succeed in reaching liftoff.
 
         At the heart of the Launchpad challenge are a series of programming problems designed to test both logical thinking and coding efficiency. Each problem is a crucial component of the rocket’s repair sequence. Teams must analyze the issues, develop optimized solutions, and implement their code quickly and accurately to progress. The faster a team solves the problems, the closer they get to launching their rocket, creating an environment that rewards both strategic planning and technical skill.
@@ -542,24 +570,71 @@ const eventData = {
     }
 };
 
-// Open modal
+// Function to generate core team HTML dynamically
+function generateCoreTeamHTML(coreTeam, coreTeamPhoto) {
+    return `
+        <div id="coreTeamSection" class="overflow-hidden max-h-0 transition-[max-height] duration-500 ease-in-out mt-4">
+    <div class="flex flex-wrap justify-center gap-6 mb-12">
+        ${coreTeam.map((member, index) => `
+            <div class="core-card p-6 border-4 border-l-0 border-r-0 border-ares bg-black/50 rounded-sm shadow-glow-sm text-center max-w-md flex-shrink-0" onclick="toggleDesc(this)">
+                <img src="${coreTeamPhoto[index]}" alt="${member}" style="filter: drop-shadow(0 0 10px #D00020);" class="w-36 mx-auto mb-4 object-cover">
+                <p class="text-white text-3xl font-bold">${member}</p>
+            </div>
+        `).join('')}
+    </div>
+</div>
+
+    `;
+}
+
+// Handle click on each event card
 cards.forEach(card => {
     card.addEventListener('click', () => {
         const title = card.querySelector('h3').textContent.trim();
         const data = eventData[title];
-        if(data){
-            modalBody.innerHTML = `
-                <div class="flex items-center mb-4">
-                    <span class="text-5xl mr-3">${data.icon}</span>
-                    <h2 class="text-4xl font-bold text-ares-red">${data.title}</h2>
-                </div>
-                <p class="text-gray-300 text-lg mb-4 whitespace-pre-line">${data.description}</p>
-                <p class="font-bold text-ares-red text-2xl mb-1">GRADE & CAPACITY:</p>
-                <p class="text-white text-xl mb-2">${data.grade}</p>
-            `;
-        }
+        if (!data) return;
+
+        // Inject modal content dynamically
+        modalBody.innerHTML = `
+            <div class="flex items-center mb-4">
+                <span class="text-5xl mr-3">${data.icon}</span>
+                <h2 class="text-4xl font-bold text-ares-red">${data.title}</h2>
+            </div>
+            <p class="text-gray-300 text-lg mb-4 whitespace-pre-line">${data.description}</p>
+            <p class="font-bold text-ares-red text-2xl mb-1">GRADE & CAPACITY:</p>
+            <p class="text-white text-xl mb-6">${data.grade}</p>
+
+            <div class="text-center mt-6">
+                <button id="coreTeamBtn" class="inline-block bg-ares-red text-white text-xl px-6 py-2 shadow-glow-md hover:shadow-glow-lg hover:scale-105 transition-all duration-300">
+                    MEET THE CORE TEAM
+                </button>
+            </div>
+
+            ${generateCoreTeamHTML(data.coreTeam, data.coreTeamphoto)}
+        `;
+
+        // Show modal
         modal.classList.remove('opacity-0', 'pointer-events-none');
-        setTimeout(() => modal.querySelector('.modal-content').classList.remove('scale-90'), 10);
+        setTimeout(() => modal.querySelector('.modal-content').classList.remove('scale-90'), 50);
+
+        // Attach listener to dynamically created button
+        const coreTeamBtn = document.getElementById('coreTeamBtn');
+        const coreTeamSection = document.getElementById('coreTeamSection');
+
+        coreTeamBtn.addEventListener('click', () => {
+            if (coreTeamSection.style.maxHeight && coreTeamSection.style.maxHeight !== "0px") {
+                coreTeamSection.style.maxHeight = "0px";
+            } else {
+                coreTeamSection.style.maxHeight = coreTeamSection.scrollHeight + "px";
+
+                // Special centering for CIRCUIT RIOT
+                if (title === "CIRCUIT RIOT") {
+                    const shauryaIndex = data.coreTeam.indexOf("Shaurya Navadiya");
+                    if (shauryaIndex !== -1) {
+                        const memberEl = document.getElementById(`coreMember-${shauryaIndex}`);
+                        memberEl.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+                    }}}
+        });
     });
 });
 
@@ -569,10 +644,15 @@ modalClose.addEventListener('click', () => {
     setTimeout(() => modal.classList.add('opacity-0', 'pointer-events-none'), 300);
 });
 
-// Click outside modal
+// Click outside modal closes it
 modal.addEventListener('click', e => {
-    if(e.target === modal) modalClose.click();
+    if (e.target === modal) modalClose.click();
 });
+
+// Allow scrolling inside modal
+modal.addEventListener('wheel', e => e.stopPropagation());
+</script>
+
 </script>
 
 
@@ -599,6 +679,7 @@ modal.addEventListener('click', e => {
         <h3 class="font text-ares-red text-xl">© 2025 by ByteFest</h3>
     </div>
 
+    
     <!-- JAVASCRIPT FOR CURSOR TRAIL (Must be before </body>) -->
     <script>
         // Logic for Tron-like cursor trail
@@ -637,6 +718,24 @@ modal.addEventListener('click', e => {
                 
             }, 50); // Small delay to create a dense trail
         });
+    </script>
+    <script>
+        function toggleExpand(id) {
+  const section = document.getElementById(id);
+  const button = document.getElementById(id + '-core-btn');
+
+  section.classList.toggle('expanded');
+
+  // show/hide "Meet Core Team" button
+  if (section.classList.contains('expanded')) {
+    button.classList.remove('opacity-0');
+    button.classList.add('opacity-100');
+  } else {
+    button.classList.remove('opacity-100');
+    button.classList.add('opacity-0');
+  }
+}
+
     </script>
 
 </body>
