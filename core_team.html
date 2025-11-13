@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BYTEFEST // CORE TEAM</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { 'ares-red': '#D00020', 'grid-black': '#000000' },
+      boxShadow: {
+        'glow-sm': '0 0 4px #D00020',
+        'glow-md': '0 0 10px #D00020',
+        'glow-lg': '0 0 20px #D00020',
+      },
+      fontFamily: { mono: ['VT323','monospace'] },
+    },
+  },
+};
+</script>
+
+<style>
+/* ==================== Background ==================== */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #000000;
+  background-image:
+    linear-gradient(0deg, transparent 95%, rgba(208,0,32,0.1) 100%),
+    linear-gradient(90deg, transparent 98%, rgba(208,0,32,0.1) 100%);
+  background-size: 50px 50px;
+  animation: grid-scroll 30s linear infinite;
+  z-index: -1;
+}
+@keyframes grid-scroll {
+  from { background-position: 0 0; }
+  to { background-position: 50px 50px; }
+}
+
+/* ==================== General Styles ==================== */
+body {
+  font-family: 'VT323', monospace;
+  color: #D00020;
+}
+
+.border-ares { border-color: #D00020; box-shadow: 0 0 4px #D00020; }
+.white-logo { filter: brightness(0) invert(1) drop-shadow(0 0 4px #D00020); opacity: 0.9; transition: all 0.4s ease-in-out; }
+.white-logo:hover { opacity: 1; transform: scale(1.05); }
+.cropped-tiger-logo {
+  background-image: url('https://github.com/auxiliumgnms/Auxilium-repo/blob/main/NMSTigersnoBG.png?raw=true');
+  background-size: 250%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0) invert(1) drop-shadow(0 0 4px #D00020);
+  opacity: 0.9;
+  transition: all 0.5s ease-in-out;
+}
+.cropped-tiger-logo:hover { opacity: 1; transform: scale(1.05); }
+
+.core-card { transition: all 0.6s ease-in-out; cursor: pointer; }
+.core-card:hover { transform: translateY(-4px); box-shadow: 0 0 12px #D00020; }
+
+.desc {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.desc.open {
+  max-height: 250px;
+  opacity: 1;
+  margin-top: 0.5rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #D00020 #000;
+}
+.desc::-webkit-scrollbar { width: 6px; }
+.desc::-webkit-scrollbar-thumb { background: #D00020; }
+</style>
+</head>
+<body class="min-h-screen p-6 relative">
+
+<!-- Main Container -->
+<div class="max-w-6xl mx-auto border-4 border-ares rounded-lg shadow-glow-lg p-8 relative z-10">
+
+  <!-- Logos -->
+  <a href="https://www.gemsnewmillenniumschool-alkhail.com/" target="_blank" class="absolute top-[3px] left-[25px] z-50 p-4">
+    <img src="https://github.com/auxiliumgnms/Auxilium-repo/blob/main/NMSSIdeLogoWithText.png?raw=true" 
+         alt="GEMS NMS Logo" class="w-24 md:w-32 white-logo" style="transform: scale(1.5);">
+  </a>
+  <a href="https://www.gemsnewmillenniumschool-alkhail.com/" target="_blank" class="absolute top-[-20px] right-[-15px] z-50 p-4">
+    <div class="w-20 h-20 md:w-28 md:h-28 cropped-tiger-logo"></div>
+  </a>
+
+  <!-- Header -->
+  <header class="text-center mb-8 pt-20 relative z-10">
+    <a href="https://bytefestnms.com/">
+      <img src="https://github.com/auxiliumgnms/Auxilium-repo/blob/main/Bytefesthackathonlogo.png?raw=true"
+           alt="ByteFest Logo" class="w-64 md:w-96 mx-auto filter brightness-125 relative"
+           style="filter: drop-shadow(0 0 10px #D00020);" />
+    </a>
+    <p class="text-ares-red text-4xl md:text-6xl mt-4">// CORE TEAM //</p>
+  </header>
+
+  <!-- Co-Organizers -->
+  <p class="text-white text-4xl md:text-5xl text-center mt-4">// ORGANIZERS //</p>
+  <br>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+    <div class="core-card p-6 border-4 border-l-0 border-r-0 border-ares bg-black/50 rounded-sm shadow-glow-sm text-center" onclick="toggleDesc(this)">
+      <img src="bytefest-human-photos\Darshil Rohra.PNG" alt="Darshil Rohra" style="filter: drop-shadow(0 0 10px #D00020);" class="w-40 h-90 mx-auto  full mb-4 object-cover">
+      <p class="text-ares-red text-4xl font-bold">Darshil Rohra</p>
+      <div class="desc mt-2 text-white text-lg text-base leading-relaxed">
+        Darshil Rohra is an innovative and driven student passionate about computer science, sustainability, and leadership. As Head Prefect of CAIE and a four-time innovation award winner, he leads initiatives that combine technology with real-world impact, inspiring peers to collaborate, think creatively, and push the boundaries of innovation.
+      </div>
+    </div>
+    <div class="core-card p-6 border-4 border-l-0 border-r-0 border-ares bg-black/50 rounded-sm shadow-glow-sm text-center" onclick="toggleDesc(this)">
+      <img src="bytefest-human-photos\Ashwin.PNG" alt="Ashwin Menon" style="filter: drop-shadow(0 0 10px #D00020);" class="w-40 h-90 mx-auto  mb-4 object-cover">
+      <p class="text-ares-red text-4xl font-bold">Ashwin Menon</p>
+      <div class="desc mt-2 text-white text-lg text-base leading-relaxed">
+        Ashwin Menon is a student developer and researcher with a passion for all things creative, who's published AI research on sleep apnea classification with Cornell's arXiv and builds web platforms for various school initiatives. He's received recognition from NUS for his work in AI and balances technical projects with creative work in film and theater.
+      </div>
+    </div>
+    <div class="core-card p-6 border-4 border-l-0 border-r-0 border-ares bg-black/50 rounded-sm shadow-glow-sm text-center" onclick="toggleDesc(this)">
+      <img src="bytefest-human-photos\Jitvar Sisodia.PNG" alt="Jitvar Sisodia" style="filter: drop-shadow(0 0 10px #D00020);" class="w-40 h-90 mx-auto  mb-4 object-cover">
+      <p class="text-ares-red text-4xl font-bold">Jitvar Sisodia</p>
+      <div class="desc mt-2 text-white text-base text-lg leading-relaxed">
+        Jitvar Sisodia has led major events before, including Panthera Firma and Commercium, where he handled sponsorships, budgets, and multi-team coordination. His experience in scaling events and managing complex logistics is a big part of why today runs the way it does.
+      </div>
+    </div>
+  </div>
+
+  <!-- Unit Titles -->
+  <div class="grid grid-cols-4 gap-8 text-center text-white text-3xl font-bold mb-4">
+    <p>Unit of Communications</p>
+    <p>Unit of Media</p>
+    <p>Unit of Volunteers</p>
+    <p>Unit of Logistics</p>
+  </div>
+
+  <!-- Units Section -->
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start text-center">
+    <!-- Communications -->
+    <div class="grid grid-cols-1 gap-4 justify-items-center">
+      <div class="core-card p-4 border-4 border-ares bg-black/50 rounded-sm shadow-glow-sm w-full cursor-pointer" onclick="toggleDesc(this)">
+        <img src="bytefest-human-photos\Gunbir Singh  Arora.PNG" style="filter: drop-shadow(0 0 10px #D00020);" class="w-32 mx-auto  mb-4 object-cover">
+        <p class="text-ares-red text-2xl font-bold">Gunbir Singh Arora</p>
+        <div class="desc mt-2 text-white text-base leading-relaxed">
+          Responsible for managing official event communications, drafting press releases, and liaising with external partners.
+        </div>
+      </div>
+      <div class="core-card p-4 border-4 border-ares bg-black/50 rounded-sm shadow-glow-sm w-full cursor-pointer" onclick="toggleDesc(this)">
+        <img src="bytefest-human-photos\Nandini  Patwa.PNG" style="filter: drop-shadow(0 0 10px #D00020);" class="w-32 mx-auto  mb-4 object-cover">
+        <p class="text-ares-red text-2xl font-bold">Nandini Patwa</p>
+        <div class="desc mt-2 text-white text-base leading-relaxed">
+          Handles team coordination for email campaigns, announcements, and outreach to ensure cohesive event messaging.
+        </div>
+      </div>
+    </div>
+
+    <!-- Media -->
+    <div class="grid grid-cols-1 gap-4 justify-items-center">
+      <div class="core-card p-4 border-4 border-ares bg-black/50 rounded-sm shadow-glow-sm w-full cursor-pointer" onclick="toggleDesc(this)">
+        <img src="bytefest-human-photos\Angel Sanghavi.PNG" style="filter: drop-shadow(0 0 10px #D00020);" class="w-32 mx-auto  mb-4 object-cover">
+        <p class="text-ares-red text-2xl font-bold">Angel Sanghvi</p>
+        <div class="desc mt-2 text-white text-base leading-relaxed">
+          Oversees content creation and media coverage, ensuring brand consistency and impactful visuals across platforms.
+        </div>
+      </div>
+      <div class="core-card p-4 border-4 border-ares bg-black/50 rounded-sm shadow-glow-sm w-full cursor-pointer" onclick="toggleDesc(this)">
+        <img src="bytefest-human-photos\Eshal.PNG" style="filter: drop-shadow(0 0 10px #D00020);" class="w-32 mx-auto  mb-4 object-cover">
+        <p class="text-ares-red text-2xl font-bold">Eshal Ali</p>
+        <div class="desc mt-2 text-white text-base leading-relaxed">
+          Manages post-production workflows and social media scheduling, optimizing engagement through creative visuals.
+        </div>
+      </div>
+    </div>
+
+    <!-- Volunteers -->
+    <div class="grid grid-cols-1 gap-4 justify-items-center">
+      <div class="core-card p-4 border-4 border-ares bg-black/50 rounded-sm shadow-glow-sm w-full cursor-pointer" onclick="toggleDesc(this)">
+        <img src="bytefest-human-photos\Mesha Mahesh.PNG" style="filter: drop-shadow(0 0 10px #D00020);" class="w-32 mx-auto  mb-4 object-cover">
+        <p class="text-ares-red text-2xl font-bold">Mesha Mirchandani</p>
+        <div class="desc mt-2 text-white text-base leading-relaxed">
+          Manages the volunteer force, organizing shifts and ensuring support staff coverage throughout the event.
+        </div>
+      </div>
+      <div class="core-card p-4 border-4 border-ares bg-black/50 rounded-sm shadow-glow-sm w-full cursor-pointer" onclick="toggleDesc(this)">
+        <img src="bytefest-human-photos\Neel  Patel.PNG" style="filter: drop-shadow(0 0 10px #D00020);" class="w-32 mx-auto  mb-4 object-cover">
+        <p class="text-ares-red text-2xl font-bold">Neel Patel</p>
+        <div class="desc mt-2 text-white text-base leading-relaxed">
+          Coordinates volunteer communications and assists with real-time troubleshooting and team morale support.
+        </div>
+      </div>
+    </div>
+  <!-- Logistics -->
+    <div class="flex flex-col justify-center items-center">
+      <div class="core-card p-4 border-4 border-ares bg-black/50 rounded-sm shadow-glow-sm w-full cursor-pointer" onclick="toggleDesc(this)">
+        <img src="bytefest-human-photos\Aryan Aswal.PNG" style="filter: drop-shadow(0 0 10px #D00020);" class="w-32 mx-auto mb-4 object-cover">
+        <p class="text-ares-red text-2xl font-bold">Aryan Aswal</p>
+        <div class="desc mt-2 text-white text-base leading-relaxed">
+          Coordinates venue layouts, setups, and supplies to ensure the smooth functioning of all ByteFest stations.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleDesc(card) {
+  const desc = card.querySelector('.desc');
+  desc.classList.toggle('open');
+}
+</script>
+</body>
+<!-- last credits --> <div class="text-center">
+        <br>
+        <a href="https://www.instagram.com/bytefestnms/?utm_source=ig_web_button_share_sheet" target="_blank">    
+            <img src="instagram.png" class="mx-auto" style="width: 30px;">
+        </a>
+        <span style="display:block; height:5px;"></span>
+        <h3 class="font text-ares-red text-xl">© 2025 by ByteFest</h3>
+    </div>
+</html>
